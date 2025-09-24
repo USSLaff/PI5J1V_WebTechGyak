@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orarend>
+    <!-- hétfő-->
+    <ora id="egy" tipus="eloadas">
+        <targy>Web technológiák 1</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>10:00</tol>
+            <ig>12:00</ig>
+        </idopont>
+        <helyszin>E/5</helyszin>
+        <oktato>Dr. Agárdi Anita</oktato>
+        <szak>Üzemmérnök-Informatikus BSc</szak>
+    </ora>
+
+    <!-- kedd-->
+    <ora id="ketto" tipus="eloadas">
+        <targy>Adatbázisrendszerek I.</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>08:00</tol>
+            <ig>10:00</ig>
+        </idopont>
+        <helyszin>E/1</helyszin>
+        <oktato>Dr. Kovács László József</oktato>
+        <szak>Üzemmérnök-Informatikus BSc</szak>
+    </ora>
+    <ora id="harom" tipus="gyakorlat">
+        <targy>Adatbázisrendszerek I. gyakorlat</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>10:00</tol>
+            <ig>13:00</ig>
+        </idopont>
+        <helyszin>In/202</helyszin>
+        <oktato>Szűcs Miklós</oktato>
+        <szak>Üzemmérnök-Informatikus BSc</szak>
+    </ora>
+
+    <!-- szerda-->
+    <ora id="negy" tipus="eloadas">
+        <targy>Szoftvertechnológia</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>08:00</tol>
+            <ig>10:00</ig>
+        </idopont>
+        <helyszin>E/3</helyszin>
+        <oktato>Dr. Mileff Péter</oktato>
+        <szak>Üzemmérnök-Informatikus BSc</szak>
+    </ora>
+    <ora id="negy" tipus="gyakorlat">
+        <targy>Szoftvertechnológia</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>10:00</tol>
+            <ig>12:00</ig>
+        </idopont>
+        <helyszin>E/3</helyszin>
+        <oktato>Dr. Mileff Péter</oktato>
+        <szak>Üzemmérnök-Informatikus BSc</szak>
+    </ora>
+    <ora id="egy" tipus="gyakorlat">
+        <targy>Web technológiák 1</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>12:00</tol>
+            <ig>14:00</ig>
+        </idopont>
+        <helyszin>In/101</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Üzemmérnök-Informatikus BSc</szak>
+    </ora>
+    <ora id="ot" tipus="gyakorlat">
+        <targy>Web technológiák 1 gyakorlat</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>14:00</tol>
+            <ig>16:00</ig>
+        </idopont>
+        <helyszin>In/102</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Üzemmérnök-Informatikus BSc</szak>
+    </ora>
+    <ora id="ketto" tipus="gyakorlat">
+        <targy>Adatbázisrendszerek I.</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>16:00</tol>
+            <ig>18:00</ig>
+        </idopont>
+        <helyszin>In/101</helyszin>
+        <oktato>Mészáros Gergő, Dr. Kovács László József</oktato>
+        <szak>Üzemmérnök-Informatikus BSc</szak>
+    </ora>
+
+    <!-- csütörtök-->
+    <ora id="hat" tipus="elmelet">
+        <targy>Számítógép architektúrák</targy>
+        <idopont>
+            <nap>csütörtök</nap>
+            <tol>12:00</tol>
+            <ig>14:00</ig>
+        </idopont>
+        <helyszin>E/3</helyszin>
+        <oktato>Dr. Kovács Szilveszter Dezső</oktato>
+        <szak>Üzemmérnök-Informatikus BSc</szak>
+    </ora>
+</orarend>

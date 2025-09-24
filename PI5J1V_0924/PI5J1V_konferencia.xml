@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PI5J1V_konferencia>
+    <konferencia>
+        <cim>Adat tervezés</cim>
+        <hallgatok>
+            <hallgato>
+                <nev>Kiss Gergő</nev>
+                <lakcim>Utca Vége</lakcim>
+            </hallgato>
+            <hallgato>
+                <nev>Kelemen Ádám</nev>
+                <lakcim>Utca Vége</lakcim>
+            </hallgato>
+            <hallgato>
+                <nev>Szováti Olivér</nev>
+                <lakcim>Utca Vége</lakcim>
+            </hallgato>
+            <hallgato>
+                <nev>Juhász Balázs</nev>
+                <lakcim>Utca Vége</lakcim>
+            </hallgato>
+        </hallgatok>
+        <helyszin>
+            Miskolc Egyetem
+        </helyszin>
+        <eloado>
+            <nev>Dr. Bednarik László</nev>
+            <adoszam>6748265783</adoszam>
+            <lakcim>Utca másik vége</lakcim>
+        </eloado>
+        <datum>2025_09_24</datum>
+    </konferencia>
+</PI5J1V_konferencia>
