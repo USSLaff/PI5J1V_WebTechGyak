@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<orarend>
+<orarend xmlns:xs="https://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="Neptun_orarend.xsd">
     <!-- hétfő-->
     <ora id="01" tipus="eloadas">
         <targy>Web technológiák 1</targy>
