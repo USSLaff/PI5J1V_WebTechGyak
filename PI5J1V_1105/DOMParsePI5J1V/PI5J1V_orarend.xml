@@ -49,7 +49,7 @@
         <oktato>Dr. Mileff Péter</oktato>
         <szak>Üzemmérnök-Informatikus BSc</szak>
     </ora>
-    <ora id="05" tipus="gyakorlat">
+    <ora id="04" tipus="gyakorlat">
         <targy>Szoftvertechnológia</targy>
         <idopont>
             <nap>szerda</nap>
@@ -60,7 +60,7 @@
         <oktato>Dr. Mileff Péter</oktato>
         <szak>Üzemmérnök-Informatikus BSc</szak>
     </ora>
-    <ora id="06" tipus="gyakorlat">
+    <ora id="01" tipus="gyakorlat">
         <targy>Web technológiák 1</targy>
         <idopont>
             <nap>szerda</nap>
@@ -71,7 +71,7 @@
         <oktato>Dr. Bednarik László</oktato>
         <szak>Üzemmérnök-Informatikus BSc</szak>
     </ora>
-    <ora id="07" tipus="gyakorlat">
+    <ora id="05" tipus="gyakorlat">
         <targy>Web technológiák 1 gyakorlat</targy>
         <idopont>
             <nap>szerda</nap>
@@ -82,7 +82,7 @@
         <oktato>Dr. Bednarik László</oktato>
         <szak>Üzemmérnök-Informatikus BSc</szak>
     </ora>
-    <ora id="08" tipus="gyakorlat">
+    <ora id="02" tipus="gyakorlat">
         <targy>Adatbázisrendszerek I.</targy>
         <idopont>
             <nap>szerda</nap>
@@ -95,7 +95,7 @@
     </ora>
 
     <!-- csütörtök-->
-    <ora id="09" tipus="elmelet">
+    <ora id="06" tipus="elmelet">
         <targy>Számítógép architektúrák</targy>
         <idopont>
             <nap>csütörtök</nap>
