@@ -1,0 +1,123 @@
+{
+    "PI5J1V_orarend": {
+        "ora": [
+            {
+                "targy": "Web technológiák 1",
+                "idopont": {
+                    "nap": "Hétfő",
+                    "tol": "10:00",
+                    "ig": "12:00"
+                },
+                "helyszin": "E/5",
+                "oktato": "Dr. Agárdi Anita",
+                "szak": "Üzemmérnök-Informatikus BSc",
+                "_id": "01",
+                "_tipus": "eloadas"
+            },
+            {
+                "targy": "Adatbázisrendszerek I.",
+                "idopont": {
+                    "nap": "kedd",
+                    "tol": "08:00",
+                    "ig": "10:00"
+                },
+                "helyszin": "E/1",
+                "oktato": "Dr. Kovács László József",
+                "szak": "Üzemmérnök-Informatikus BSc",
+                "_id": "02",
+                "_tipus": "eloadas"
+            },
+            {
+                "targy": "Adatbázisrendszerek I. gyakorlat",
+                "idopont": {
+                    "nap": "kedd",
+                    "tol": "10:00",
+                    "ig": "13:00"
+                },
+                "helyszin": "In/202",
+                "oktato": "Szűcs Miklós",
+                "szak": "Üzemmérnök-Informatikus BSc",
+                "_id": "03",
+                "_tipus": "gyakorlat"
+            },
+            {
+                "targy": "Szoftvertechnológia",
+                "idopont": {
+                    "nap": "szerda",
+                    "tol": "08:00",
+                    "ig": "10:00"
+                },
+                "helyszin": "E/3",
+                "oktato": "Dr. Mileff Péter",
+                "szak": "Üzemmérnök-Informatikus BSc",
+                "_id": "04",
+                "_tipus": "eloadas"
+            },
+            {
+                "targy": "Szoftvertechnológia",
+                "idopont": {
+                    "nap": "szerda",
+                    "tol": "10:00",
+                    "ig": "12:00"
+                },
+                "helyszin": "E/3",
+                "oktato": "Dr. Mileff Péter",
+                "szak": "Üzemmérnök-Informatikus BSc",
+                "_id": "05",
+                "_tipus": "gyakorlat"
+            },
+            {
+                "targy": "Web technológiák 1",
+                "idopont": {
+                    "nap": "szerda",
+                    "tol": "12:00",
+                    "ig": "14:00"
+                },
+                "helyszin": "In/101",
+                "oktato": "Dr. Bednarik László",
+                "szak": "Üzemmérnök-Informatikus BSc",
+                "_id": "06",
+                "_tipus": "gyakorlat"
+            },
+            {
+                "targy": "Web technológiák 1 gyakorlat",
+                "idopont": {
+                    "nap": "szerda",
+                    "tol": "14:00",
+                    "ig": "16:00"
+                },
+                "helyszin": "In/102",
+                "oktato": "Dr. Bednarik László",
+                "szak": "Üzemmérnök-Informatikus BSc",
+                "_id": "07",
+                "_tipus": "gyakorlat"
+            },
+            {
+                "targy": "Adatbázisrendszerek I.",
+                "idopont": {
+                    "nap": "szerda",
+                    "tol": "16:00",
+                    "ig": "18:00"
+                },
+                "helyszin": "In/101",
+                "oktato": "Mészáros Gergő, Dr. Kovács László József",
+                "szak": "Üzemmérnök-Informatikus BSc",
+                "_id": "08",
+                "_tipus": "gyakorlat"
+            },
+            {
+                "targy": "Számítógép architektúrák",
+                "idopont": {
+                    "nap": "csütörtök",
+                    "tol": "12:00",
+                    "ig": "14:00"
+                },
+                "helyszin": "E/3",
+                "oktato": "Dr. Kovács Szilveszter Dezső",
+                "szak": "Üzemmérnök-Informatikus BSc",
+                "_id": "09",
+                "_tipus": "elmelet"
+            }
+        ]
+    }
+}
