@@ -1,0 +1,91 @@
+Gyökér elem: Jatekkonyvtar
+Játék Könyvtár XML beolvasása
+==================================================
+
+1. MŰFAJOK
+------------------------------
+Műfaj [1]: Akció
+Műfaj [2]: MMO
+Műfaj [3]: Nyílt világ
+Műfaj [4]: FPS
+
+
+2. JÁTÉKOK
+------------------------------
+
+Játék [1]
+  Cím: Cyberpunk2077
+  Készítő: CD Projekt Red
+  Ár: 59.99 EUR
+  Műfajok:
+    • Akció
+    • FPS
+
+Játék [2]
+  Cím: Counter-Strike 2
+  Készítő: Valve
+  Ár: 49.99 EUR
+  Műfajok:
+    • Akció
+    • FPS
+
+
+3. FELHASZNÁLÓK
+------------------------------
+
+Felhasználó [1]
+  Email: gamer1@email.com
+  Becenevek:
+    • nev1
+    • nev2
+  Pénztárca: 150.00 EUR
+
+Felhasználó [2]
+  Email: pro_player@email.com
+  Becenevek:
+    • nev3
+    • nev4
+  Pénztárca: 
+                150.00
+             
+                EUR
+            
+
+
+4. JÁTÉKTULAJDON
+------------------------------
+
+Vásárlás [1]
+  JátékID: 1
+  FelhasználóID: 1
+  Összes játszott óra: 70
+  Vásárlás dátuma: 2021-11-10
+
+Vásárlás [2]
+  JátékID: 2
+  FelhasználóID: 2
+  Összes játszott óra: 30
+  Vásárlás dátuma: 2021-12-27
+
+
+5. TELJESÍTMÉNYEK
+------------------------------
+
+Teljesítmény [1]
+  Cím: Night City Legend
+  Leírás: Complete all main missions
+  JátékID: 1
+
+Teljesítmény [2]
+  Cím: Gun Collector
+  Leírás: Collect all weapon types
+  JátékID: 2
+
+
+6. ELÉRT TELJESÍTMÉNYEK
+------------------------------
+Felhasználó [1] elérte a játék [1] teljesítményeit
+Felhasználó [2] elérte a játék [2] teljesítményeit
+
+==================================================
+[INFO] Kiírás kész: src/hu/domparse/pi5j1v/read_log.txt

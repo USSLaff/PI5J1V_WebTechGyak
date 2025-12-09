@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Jatekkonyvtar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="pi5j1v_xsd.xsd">
+
+
+    <Mufaj MufajID="1">
+        Akció
+    </Mufaj>
+    <Mufaj MufajID="2">
+        MMO
+    </Mufaj>
+    <Mufaj MufajID="3">
+        Nyílt világ
+    </Mufaj>
+    <Mufaj MufajID="4">
+        FPS
+    </Mufaj>
+
+    <Jatek JatekID="1">
+        <Cim>Cyberpunk2077</Cim>
+        <Keszito>CD Projekt Red</Keszito>
+        <EurAr>39.99</EurAr>
+    </Jatek>
+
+    <Jatek JatekID="2">
+        <Cim>Counter-Strike 2</Cim>
+        <Keszito>Valve</Keszito>
+        <EurAr>49.99</EurAr>
+    </Jatek>
+
+    <JatekMufaj>
+        <JatekID>1</JatekID>
+        <MufajID>1</MufajID>
+    </JatekMufaj>
+    <JatekMufaj>
+        <JatekID>1</JatekID>
+        <MufajID>4</MufajID>
+    </JatekMufaj>
+    <JatekMufaj>
+        <JatekID>2</JatekID>
+        <MufajID>1</MufajID>
+    </JatekMufaj>
+    <JatekMufaj>
+        <JatekID>2</JatekID>
+        <MufajID>4</MufajID>
+    </JatekMufaj>
+
+    <Felhasznalo UID="1">
+        <Email>gamer1@email.com</Email>
+        <Becenev>nev1</Becenev>
+        <Becenev>nev2</Becenev>
+        <Penztarca>
+            <Mennyiseg>200.00</Mennyiseg>
+            <Tipus>EUR</Tipus>
+        </Penztarca>
+    </Felhasznalo>
+
+    <Felhasznalo UID="2">
+        <Email>new_player@email.com</Email>
+        <Becenev>playerX</Becenev>
+        <Becenev>gamerZ</Becenev>
+        <Penztarca>
+            <Mennyiseg>75.50</Mennyiseg>
+            <Tipus>EUR</Tipus>
+        </Penztarca>
+    </Felhasznalo>
+
+    <Felhasznalo UID="3">
+        <Email>new_player@email.com</Email>
+        <Becenev>playerX</Becenev>
+        <Becenev>gamerZ</Becenev>
+        <Penztarca>
+            <Mennyiseg>75.50</Mennyiseg>
+            <Tipus>EUR</Tipus>
+        </Penztarca>
+    </Felhasznalo>
+
+
+    <JatekTulajdon VasarlasID="1">
+        <JatekID>1</JatekID>
+        <FelhasznaloID>1</FelhasznaloID>
+        <Oraszam>100</Oraszam>
+        <VasarlasDatum>2021-11-10</VasarlasDatum>
+    </JatekTulajdon>
+
+    <JatekTulajdon VasarlasID="2">
+        <JatekID>2</JatekID>
+        <FelhasznaloID>2</FelhasznaloID>
+        <Oraszam>30</Oraszam>
+        <VasarlasDatum>2021-12-27</VasarlasDatum>
+    </JatekTulajdon>
+
+
+    <Teljesitmeny TeljesitmenyID="1">
+        <Cim>Night City Legend</Cim>
+        <Leiras>Complete all main missions</Leiras>
+        <JatekID>1</JatekID>
+    </Teljesitmeny>
+
+    <Teljesitmeny TeljesitmenyID="2">
+        <Cim>Gun Collector</Cim>
+        <Leiras>Collect all weapon types</Leiras>
+        <JatekID>2</JatekID>
+    </Teljesitmeny>
+
+
+    <ElertTeljesitmeny>
+        <FelhasznaloID>1</FelhasznaloID>
+        <JatekID>1</JatekID>
+    </ElertTeljesitmeny>
+
+    <ElertTeljesitmeny>
+        <FelhasznaloID>2</FelhasznaloID>
+        <JatekID>2</JatekID>
+    </ElertTeljesitmeny>
+
+    <ElertTeljesitmeny>
+        <FelhasznaloID>3</FelhasznaloID>
+        <JatekID>2</JatekID>
+    </ElertTeljesitmeny>
+
+
+</Jatekkonyvtar>
