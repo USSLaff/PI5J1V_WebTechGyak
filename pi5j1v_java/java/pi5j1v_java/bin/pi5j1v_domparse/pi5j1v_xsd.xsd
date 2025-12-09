@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Gyökér elem -->
+    <xs:element name="Jatekkonyvtar">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Mufaj" type="MufajType" maxOccurs="unbounded" />
+                <xs:element name="Jatek" type="JatekType" maxOccurs="unbounded" />
+                <xs:element name="JatekMufaj" type="JatekMufajType" maxOccurs="unbounded" />
+                <xs:element name="Felhasznalo" type="FelhasznaloType" maxOccurs="unbounded" />
+                <xs:element name="JatekTulajdon" type="JatekTulajdonType" maxOccurs="unbounded" />
+                <xs:element name="Teljesitmeny" type="TeljesitmenyType" maxOccurs="unbounded" />
+                <xs:element name="ElertTeljesitmeny" type="ElertTeljesitmenyType"
+                    maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+
+        <!-- Kulcsok és foreign key-ek definíciója -->
+        <xs:key name="MufajPK">
+            <xs:selector xpath="Mufaj" />
+            <xs:field xpath="@MufajID" />
+        </xs:key>
+
+        <xs:key name="JatekPK">
+            <xs:selector xpath="Jatek" />
+            <xs:field xpath="@JatekID" />
+        </xs:key>
+
+        <xs:key name="FelhasznaloPK">
+            <xs:selector xpath="Felhasznalo" />
+            <xs:field xpath="@UID" />
+        </xs:key>
+
+        <xs:key name="JatekTulajdonPK">
+            <xs:selector xpath="JatekTulajdon" />
+            <xs:field xpath="@VasarlasID" />
+        </xs:key>
+
+        <xs:key name="TeljesitmenyPK">
+            <xs:selector xpath="Teljesitmeny" />
+            <xs:field xpath="@TeljesitmenyID" />
+        </xs:key>
+
+        <!-- Játék-műfaj kapcsolótábla összetett kulcsa -->
+        <xs:key name="JatekMufajPK">
+            <xs:selector xpath="JatekMufaj" />
+            <xs:field xpath="JatekID" />
+            <xs:field xpath="MufajID" />
+        </xs:key>
+
+        <!-- Elért teljesítmények összetett kulcsa -->
+        <xs:key name="ElertTeljesitmenyPK">
+            <xs:selector xpath="ElertTeljesitmeny" />
+            <xs:field xpath="FelhasznaloID" />
+            <xs:field xpath="JatekID" />
+        </xs:key>
+
+        <!-- Foreign key-ek -->
+        <xs:keyref name="JatekMufajJatekFK" refer="JatekPK">
+            <xs:selector xpath="JatekMufaj" />
+            <xs:field xpath="JatekID" />
+        </xs:keyref>
+
+        <xs:keyref name="JatekMufajMufajFK" refer="MufajPK">
+            <xs:selector xpath="JatekMufaj" />
+            <xs:field xpath="MufajID" />
+        </xs:keyref>
+
+        <xs:keyref name="JatekTulajdonJatekFK" refer="JatekPK">
+            <xs:selector xpath="JatekTulajdon" />
+            <xs:field xpath="JatekID" />
+        </xs:keyref>
+
+        <xs:keyref name="JatekTulajdonFelhasznaloFK" refer="FelhasznaloPK">
+            <xs:selector xpath="JatekTulajdon" />
+            <xs:field xpath="FelhasznaloID" />
+        </xs:keyref>
+
+        <xs:keyref name="TeljesitmenyJatekFK" refer="JatekPK">
+            <xs:selector xpath="Teljesitmeny" />
+            <xs:field xpath="JatekID" />
+        </xs:keyref>
+
+        <xs:keyref name="ElertTeljesitmenyFelhasznaloFK" refer="FelhasznaloPK">
+            <xs:selector xpath="ElertTeljesitmeny" />
+            <xs:field xpath="FelhasznaloID" />
+        </xs:keyref>
+
+        <xs:keyref name="ElertTeljesitmenyJatekFK" refer="JatekPK">
+            <xs:selector xpath="ElertTeljesitmeny" />
+            <xs:field xpath="JatekID" />
+        </xs:keyref>
+
+    </xs:element>
+
+    <!-- Mufaj típus -->
+    <xs:complexType name="MufajType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="MufajID" type="xs:integer" use="required" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <!-- Jatek típus -->
+    <xs:complexType name="JatekType">
+        <xs:sequence>
+            <xs:element name="Cim" type="xs:string" />
+            <xs:element name="Keszito" type="xs:string" />
+            <xs:element name="EurAr" type="xs:decimal" />
+        </xs:sequence>
+        <xs:attribute name="JatekID" type="xs:integer" use="required" />
+    </xs:complexType>
+
+    <!-- JatekMufaj típus -->
+    <xs:complexType name="JatekMufajType">
+        <xs:sequence>
+            <xs:element name="JatekID" type="xs:integer" />
+            <xs:element name="MufajID" type="xs:integer" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Felhasznalo típus -->
+    <xs:complexType name="FelhasznaloType">
+        <xs:sequence>
+            <xs:element name="Email" type="xs:string" />
+            <xs:element name="Becenev" type="xs:string" maxOccurs="unbounded" />
+            <xs:element name="Penztarca" type="PenztarcaType" />
+        </xs:sequence>
+        <xs:attribute name="UID" type="xs:integer" use="required" />
+    </xs:complexType>
+
+    <!-- Penztarca típus -->
+    <xs:complexType name="PenztarcaType">
+        <xs:sequence>
+            <xs:element name="Mennyiseg" type="xs:decimal" />
+            <xs:element name="Tipus" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- JatekTulajdon típus -->
+    <xs:complexType name="JatekTulajdonType">
+        <xs:sequence>
+            <xs:element name="JatekID" type="xs:integer" />
+            <xs:element name="FelhasznaloID" type="xs:integer" />
+            <xs:element name="Oraszam" type="xs:integer" />
+            <xs:element name="VasarlasDatum" type="xs:date" />
+        </xs:sequence>
+        <xs:attribute name="VasarlasID" type="xs:integer" use="required" />
+    </xs:complexType>
+
+    <!-- Teljesitmeny típus -->
+    <xs:complexType name="TeljesitmenyType">
+        <xs:sequence>
+            <xs:element name="Cim" type="xs:string" />
+            <xs:element name="Leiras" type="xs:string" />
+            <xs:element name="JatekID" type="xs:integer" />
+        </xs:sequence>
+        <xs:attribute name="TeljesitmenyID" type="xs:integer" use="required" />
+    </xs:complexType>
+
+    <!-- ElertTeljesitmeny típus -->
+    <xs:complexType name="ElertTeljesitmenyType">
+        <xs:sequence>
+            <xs:element name="FelhasznaloID" type="xs:integer" />
+            <xs:element name="JatekID" type="xs:integer" />
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
